@@ -1,6 +1,6 @@
 "use client";
 import Image from "next/image";
-import styles from "../stylesheet/signup.module.css";
+import styles from "../stylesheet/signUp.module.css";
 import SocialLoging from "../components/SocialLogin";
 import TextInput from "../components/TextInput";
 import { useForm } from "react-hook-form";

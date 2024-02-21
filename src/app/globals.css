@@ -58,14 +58,30 @@ form {
   width: auto;
 }
 
+.signin__container {
+  margin: 0 auto;
+  width: auto;
+}
+
+
 @media screen and (min-width: 1024px) {
   .singup__container {
+    max-width: 960px;
+  }
+  
+  .signin__container {
     max-width: 960px;
   }
 }
 
 @media screen and (min-width: 1216px){
   .singup__container:not(.is-max-desktop) {
+    max-width: 1252px;
+    display: flex;
+    align-items: center;
+  }
+
+  .signin__container:not(.is-max-desktop) {
     max-width: 1252px;
     display: flex;
     align-items: center;

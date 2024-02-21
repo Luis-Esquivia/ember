@@ -3,7 +3,6 @@
   border-radius: 8px;
   border: solid 1px #D0D5DD;
   color: black;
-  padding: 10px 14px;
   font-size: 16px;
   line-height: 24px;
   font-weight: 400;
@@ -14,6 +13,14 @@
   font-size: 16px;
   line-height: 24px;
   font-weight: 400;
+}
+
+.input--sign-up {
+  padding: 10px 14px;
+}
+
+.input--sign-in {
+  padding: 18px 14px;
 }
 
 .sr-only {

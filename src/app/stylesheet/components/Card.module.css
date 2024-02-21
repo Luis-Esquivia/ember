@@ -6,7 +6,14 @@
 
 .container__slider_info{
   text-align: center;
+}
+
+.container__slider_info--sign-up{
   padding: 50px 20px 100px 20px;
+}
+
+.container__slider_info--sign-in {
+  padding: 10px 20px 68px 20px;
 }
 
 .slider_info__text {
@@ -31,6 +38,16 @@
   border-radius: 18.85px;
   padding: 20px 0px 0px 28px;
   margin-top: 80px;
+}
+
+.card_banner__sign_in {
+  text-align: center;
+  margin-top: 60px;
+/*   background-color: #8C8B8B; */
+}
+
+.ocultar {
+  display: none;
 }
 
 .card_banner__title {

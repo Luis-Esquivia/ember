@@ -1,6 +1,7 @@
 .container {
   margin: 0 auto;
   width: auto;
+  padding-top: 20px;
 }
 
 .logo {
@@ -39,8 +40,6 @@
   opacity: 0.5;
 }
 
-
-
 .login_email__text {
   color: #667085;
   font-size: 14px;
@@ -64,6 +63,7 @@
   color: white;
   font-size: 18px;
   font-weight: 600;
+  margin-top: 49px;
 }
 
 .terms {
@@ -76,15 +76,55 @@
 
 .terms__span {
   color: #667085;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20.5px;
 }
 
-.terms__container.terms__container--responsive{
-  text-align: start;
-  display: none;
+.terms__container{
+  text-align: center;
+  margin-top: 36px;
+}
+
+.terms__link {
+  font-size: 14px;
+  color: #101828;
+  font-weight: 700;
 }
 
 .form {
   padding: 0px 40px;
+}
+
+.form--sign-in {
+  padding: 0px 40px;
+}
+
+.items {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 40px;
+}
+
+.items__remember {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  color: #101828;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.items__forgot_link {
+  color: #6941C6;
+  font-size: 13px;
+  font-weight: 400;
+}
+
+.items__remember_checkbox {
+  width: 16px;  
+  height: 16px; 
+  cursor: pointer;
 }
 
 @media screen and (min-width: 1408px) {
@@ -123,8 +163,12 @@
     padding: 0px 120px;
   }
 
-  .terms__container {
-    display: none;
+  .form--sign-in {
+    padding: 0px 100px;
+  }
+
+  .items {
+    margin-top: 38px;
   }
 
   .terms__container.terms__container--responsive{
@@ -137,5 +181,9 @@
 
   .login_email__line {
     width: 160px;
+  }
+
+  .button {
+    margin-top: 28px;
   }
 }
