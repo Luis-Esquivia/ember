@@ -20,13 +20,22 @@
   background-color: #F9FAFB;
   border: solid 1px #D0D5DD;
   justify-content: center;
+  cursor: pointer;
 }
-
 
 @media screen and (min-width: 1216px){
   .container {
-    gap: 64px;
     margin-top: 30px;
+  }
+
+  .container--sign-up {
+    padding: 0;
+    gap: 64px;
+  }
+
+  .container--sign-in {
+    padding: 0 80px;
+    gap: 28px;
   }
 
   .button {

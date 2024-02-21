@@ -1,7 +1,12 @@
+'use client'
 import Image from "next/image";
-import styles from "../stylesheet/components/CardSignUp.module.css";
+import styles from "../stylesheet/components/Card.module.css";
+import { usePathname } from 'next/navigation'
 
 export default function CardSignUp() {
+  const router = usePathname();
+  const isSignUpPage = router === '/sign-up';
+  const sliderInfoTitle = isSignUpPage ? 'Speady, Easy and Fast' : 'Get Better with Money';
   return (
     <div className={styles.container}>
       <Image
@@ -12,8 +17,9 @@ export default function CardSignUp() {
         height={55}
         priority
       />
-      <div className={styles.card_banner}>
-        <div className={styles.card_banner__text}>
+      {isSignUpPage ? (
+        <div className={styles.card_banner}>
+          <div className={styles.card_banner__text}>
           <p className={styles.card_banner__title}>Earnings</p>
           <p className={styles.card_banner__subtitle}>Total Expense</p>
           <p className={styles.card_banner__price}>$9589.59</p>
@@ -30,9 +36,19 @@ export default function CardSignUp() {
             priority
           />
         </div>
-      </div>
-      <div className={styles.container__slider_info}>
-        <h3>Speady, Easy and Fast</h3>
+        </div>
+      ) : (
+        <div className={styles.card_banner__sign_in}>
+         <Image
+          src="/revenue.svg"
+          alt="Ember logo"
+          width={370}
+          height={285}
+        />   
+        </div>
+      )}
+      <div className={`${styles.container__slider_info} ${isSignUpPage ? styles['container__slider_info--sign-up'] : styles['container__slider_info--sign-in']}`}>
+        <h3>{sliderInfoTitle}</h3>
         <p className={styles.slider_info__text}>
           Overpay help you set saving goals, earn cash back offers, Go to
           disclaimer for more details and get paychecks up to two days early.
